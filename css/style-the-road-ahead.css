@@ -399,15 +399,17 @@ table {
 
 
 
-.nav-container__text {
+.nav-container__text{
   font-family: 'Lora';
   font-style: normal;
+  text-decoration: none;
   height: 26px;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
   color: #2E2E2E;
 }
+
 
 .nav-menu__list {
   list-style: none;
@@ -440,7 +442,7 @@ table {
 }
 
 
-.first-section__greeting {
+.greeting-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -500,14 +502,14 @@ button {
   margin-bottom: 140px;
 }
 
-.main-section__text {
+.main-section__text-box {
   width: 960px;
   height: 1431px;
-  transform: translate(50%, 0%);
+  margin: 0 auto;
   text-align: left;
 }
 
-.main-section__paragraph {
+.main-section__text-item {
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 400;
@@ -533,12 +535,12 @@ footer {
   padding-top: 81px;
 }
 
-.footer__text {
+.footer-text {
   text-align: center;
   margin-bottom: -100px;
 }
 
-h2 {
+.footer-text__item {
   display: inline-block;
   font-family: 'Oxygen';
   width: 175px;
@@ -551,7 +553,7 @@ h2 {
   color: #EFEFEF;
 }
 
-h2::after {
+.footer-text__item::after {
   content: "";
   display: block;
   width: 175px;
@@ -561,29 +563,32 @@ h2::after {
   border-bottom: 1px solid #DEDEDE;
 }
 
-.mail {
+.form {
   display: flex;
   justify-content: center;
 }
 
-.mail__input {
+.form__input {
   height: 50px;
   width: 465px;
   padding-left: 35px;
   border-radius: 3px 0px 0px 3px;
   border: none;
-
+  
 }
 
-.mail__button {
+.form__button {
   height: 52px;
   width: 125px;
   background: rgba(255, 255, 255, 0.28);
   border-radius: 0px 3px 3px 0px;
-  font-size: 12px;
   border: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
   color: #F8F8F8;
-
 }
 
 .nav-footer {

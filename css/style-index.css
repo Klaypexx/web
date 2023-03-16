@@ -404,6 +404,7 @@ table {
 .nav-container__text {
     font-family: 'Lora';
     font-style: normal;
+    text-decoration: none;
     height: 26px;
     font-weight: 400;
     font-size: 26px;
@@ -479,19 +480,20 @@ h1 {
     margin-bottom: 31px;
 }
 
-button {
+
+.greeting-box__button {
     font-family: 'Oxygen';
     font-style: normal;
+    display: inline-block;
+    text-decoration: none;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 18px;
     color: #FFFFFF;
-
-    height: 44px;
-    width: 155px;
+    padding: 22px 45px;
     background: #DD783F;
     border-radius: 3px;
     border: none;
+    
 }
 
 
@@ -539,12 +541,12 @@ button {
 }
 
 
-.main-section__text {
+.text-container {
   text-align: center;
   margin-bottom: 40px;
 }
 
-h2 {
+.text-container__item {
     display: inline-block;
     font-family: 'Oxygen';
     width: 161px;
@@ -556,7 +558,7 @@ h2 {
     color: #2E2E2E;
 }
 
-h2::after {
+.text-container__item::after {
   content: "";
   display: block;
   width: 160px;
@@ -564,30 +566,33 @@ h2::after {
   border-bottom: 1px solid #DEDEDE;
 }
 
-.first-mini-section {
+.flex-section {
   display: flex;
   justify-content: center;
   margin-bottom: 67px;
 }
 
 
-.container-big-1 {
-    background: url(/index/img/featured_posts/road.png) no-repeat;
+.container-big {
     height: 280px;
     width: 460px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 
+.container-big_back-1 {
+  background: url(/index/img/featured_posts/road.png) no-repeat;
+}
 
-.container-big__first {
+.container-big__first-block {
   margin-bottom: 10px;
   margin-left: 20px;
 }
 
-.container-big__second {
+.container-big__second-block{
   display: flex;
   justify-content: flex-start;
   margin-bottom: 15px;
@@ -606,14 +611,8 @@ h2::after {
   margin-right: 180px;
 }
 
-.container-big-2 {
-    background: url(/index/img/featured_posts/top_down.png) no-repeat;
-    height: 280px;
-    width: 460px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
+.container-big_back-2 {
+  background: url(/index/img/featured_posts/top_down.png) no-repeat;
 }
 
 
@@ -639,7 +638,7 @@ h2::after {
   padding-top: 6px;
 }
 
-.container-big__h3 {
+.container-big__heading {
     font-family: 'Lora';
     font-style: normal;
     height: 30px;
@@ -650,7 +649,7 @@ h2::after {
     margin-bottom: 6px;
 }
 
-.container-big__p {
+.container-big__paragraph {
     font-family: 'Oxygen';
     font-style: normal;
     height: 25px;
@@ -661,7 +660,7 @@ h2::after {
 }
 
 
-.second-mini-section {
+.grid-section {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   justify-content: center;
@@ -684,13 +683,13 @@ h2::after {
   display: block;
 }
 
-.container-small-first {
+.container-small__first-block {
   height: 93px;
   padding-top: 14px;
   padding-left: 13px;
 }
 
-.container-small-second {
+.container-small__second-block {
   display: flex;
   align-items: center;
   padding: 12px 0px 10px 13px;
@@ -714,7 +713,7 @@ h2::after {
 }
 
 
-.container-small__h3 {
+.container-small__heading {
     font-family: 'Lora';
     font-style: normal;
     height: 21px;
@@ -725,7 +724,7 @@ h2::after {
     margin-bottom: 6px;
 }
 
-.container-small__p {
+.container-small__paragraph {
     font-family: 'Oxygen';
     font-style: normal;
     height: 19px;
@@ -747,11 +746,11 @@ footer {
     padding-top: 81px;
 }
 
-.footer__text {
+.footer-container {
   margin-bottom: -100px;
 }
 
-.footer__text-h2 {
+.footer-container-item {
   color: #EFEFEF;
   font-weight: 400;
   font-size: 25px;
@@ -761,18 +760,18 @@ footer {
   height: 30px;
 }
 
-.footer__text-h2::after {
+.footer-container-item::after {
   width: 175px;
   left: 40%;
   right: 40%;
 }
 
-.mail {
+.form {
   display: flex;
   justify-content: center;
 }
 
-.mail__input {
+.form__input {
   height: 50px;
   width: 465px;
   padding-left: 35px;
@@ -781,14 +780,18 @@ footer {
   
 }
 
-.mail__button {
+.form__button {
   height: 52px;
   width: 125px;
   background: rgba(255, 255, 255, 0.28);
   border-radius: 0px 3px 3px 0px;
-  font-size: 12px;
   border: none;
-
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #F8F8F8;
 }
 
 .nav-footer {
