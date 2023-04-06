@@ -1,0 +1,191 @@
+/*=== Normalize ===*/
+body {
+    font: 14px Lora;
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    color: #DBCBCB;
+}
+
+/*=== HEADER ===*/
+.header {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-subblock {
+    height: 30px;
+    width: 960px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-subblock__title {
+    font: normal 26px/26px Lora;
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+.header__nav-link {
+    margin: 0 20px;
+    font: normal 12px/20px Oxygen;
+    color: #2E2E2E;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+}
+
+.header-bottom {
+    margin-top: 110px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-bottom__title {
+    font: normal 50px/51px Lora;
+    color: #2E2E2E;
+    letter-spacing: 2px;
+}
+
+.header-bottom__text {
+    font: normal 17px/20px Oxygen;
+    color: #2E2E2EA1;
+}
+
+/*=== IMAGE ===*/
+.image {
+    height: 534px;
+    background: url('../img/the_road_ahead/the_road_ahead.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*=== CONTENT ===*/
+.content {
+    display: grid;
+    justify-content: space-around;
+}
+
+.content-subblock {
+    max-height: 1431px;
+    max-width: 960px;
+    margin: 140px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-subblock__text {
+    font: normal 24px/35px Oxygen;
+    color: #101315;
+}
+
+/*=== WRITING ===*/
+.footer-writing {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-writing-subblock {
+    display: grid;
+    justify-items: center;
+}
+
+.writing-subblock__title {
+    font: normal 25px/30px Oxygen;
+    color: #EFEFEF;
+}
+
+.writing-subblock-line {
+    border-bottom: solid 1px #DEDEDE;
+    width: 200px;
+    margin: 20px 0;
+}
+
+/*=== INPUT ===*/
+.input__text {
+    padding: 18px 208px 18px 35px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+    font: normal 12px/14px Roboto;
+    color: #817F83;
+}
+
+.input__button {
+    padding: 18px 43px 18px 44px;
+    background: #FFFFFF47;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    position: relative;
+    left: -5px;
+    font: normal 12px/14px Roboto;
+    color: #F8F8F8;
+}
+/*=== FOOTER ===*/
+.footer {
+    background: url('../img/footer/stay.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 378px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-subblock {
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url('../img/footer/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-subblock__background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 8%;
+}
+
+.footer-subblock-line {
+    opacity: 10%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    border: solid 1px #FFF;  
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__title {
+    font: normal 26px/1 Lora;
+    color: #FFF;
+    padding: 30px 0;
+    text-decoration: none;
+}
+
+.footer__nav-link {
+    margin: 0 10px;
+    font: normal 11px/0.4 Oxygen;
+    color: #FFFFFF99;
+    text-decoration: none;
+    letter-spacing: 1px;
+}

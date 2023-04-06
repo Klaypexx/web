@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="..\static\css\normalize.css" rel="stylesheet" >
+    <link href="..\static\css\style__index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-subblock">
+            <a class="header__title" href="/">Escape.</a>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="/">HOME</a>
+                <a class="header__nav-link" href="/">CATEGORIES</a>
+                <a class="header__nav-link" href="/">ABOUT</a>
+                <a class="header__nav-link" href="/">CONTACT</a>
+            </nav>
+        </div>
+        <section class="header-section">
+            <div class="header-section__subblock">
+                <h1 class="header-section__title">Let's do it together</h1>
+                <p class="header-section__text">We travel the world in search of stories. Come along for the ride</p>
+                <button class="header-section__button">View Latest Posts</button>
+            </div>
+        </section>     
+    </header> 
+    <nav class="nav">
+        <div class="nav-subblock">
+            <a class="nav__link" href="/">Nature</a>
+            <a class="nav__link" href="/">Photography</a>
+            <a class="nav__link" href="/">Relaxation</a>
+            <a class="nav__link" href="/">Vacation</a>
+            <a class="nav__link" href="/">Travel</a>
+            <a class="nav__link" href="/">Adventure</a>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="main-subblock">
+            <h2 class="main__title">Featured Posts</h2>
+            <div class="main-line__title"></div>
+                <div class="main-title-featured">
+                {{ range .FeaturedPosts }}    
+                    <div class="main-featured">
+                        <div class="main-featured-subblock">
+                            <button class="featured__btn">ADVENTURE</button>
+                            <h3 class="main__featured__title">{{ .Title }}</h3>
+                            <img src="{{ .ImgModifier }}" alt="foto from">
+                            <p class="main__featured__text">{{ .Subtitle }}</p>
+                            <div class="main-featured-subblock-cell">
+                                <img src="{{ .AuthorImg }}" alt="foto william">
+                                <p class="main__featured__author">{{ .Author }}</p>
+                                <p class="main__featured__data">{{ .PublishDate }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}        
+                </div>         
+            </div>
+        </div> 
+        <div class="main-subblock-bottom">
+            <h2 class="main__title">Most Recent</h2>
+            <div class="main-line__title"></div>
+            <div class="main-most">
+                {{ range .MostRecent }}
+                <div class="main-most-cell">
+                    <h3 class="main-most-cell__title">{{ .Title }}</h3>
+                    <p class="main-most-cell__text">{{ .Subtitle }}</p>
+                    <img src="{{ .ImgModifier }}" alt="foto still">
+                    <div class="main-most-subblock-cell">
+                        <img class="main-most__item" src="{{ .AuthorImg }}" alt="foto william">
+                        <p class="main-most__author">{{ .Author }}</p>
+                        <p class="main-most__data">{{ .PublishDate }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>   
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer-writing">
+            <div class="footer-writing-subblock">
+                <h2 class="writing-subblock__title">Stay in Touch</h2>
+                <div class="writing-subblock-line"></div>
+                <form>
+                    <input class="input__text" type="text" name="email" placeholder="Enter your email address">
+                    <input class="input__button" type="submit" name="button" value="Submit">
+                </form>
+            </div>
+        </section> 
+        <div class="footer-subblock">
+            <div class="footer__container">
+                <div class="footer-subblock-line"></div> 
+                <a class="footer__title" href="/">Espace.</a>
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="/">HOME</a>
+                    <a class="footer__nav-link" href="/">CATEGOTIES</a>
+                    <a class="footer__nav-link" href="/">ABOUT</a>
+                    <a class="footer__nav-link" href="/">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
